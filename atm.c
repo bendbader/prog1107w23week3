@@ -11,7 +11,7 @@ int main()
 
     char isRunning = 'y';
 
-    while(isRunning != 'n' || isRunning != 'N'){
+    while(isRunning != 'n' && isRunning != 'N'){
         //How to ask for the amount of money to dispense
         int money = get_int("How much money would withdraw?\n");
 
@@ -72,7 +72,7 @@ int main()
         }
 
 
-        isRunning = get_char("Do you want to keep withdrawing?");
+        isRunning = get_char("Do you want to keep withdrawing? ");
     }
    
 
